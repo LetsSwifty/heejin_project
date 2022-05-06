@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BookListViewController.swift
 //  MyBook
 //
 //  Created by 김희진 on 2022/05/05.
@@ -11,56 +11,26 @@ import SnapKit
 import Realm
 import RealmSwift
 
-struct Book {
-    let title: String
-    let description: String
-    var isChecked: Bool
-}
-
-class Book2: Object {
-    @Persisted(primaryKey: true) var _id: ObjectId
-    @Persisted var title2: String = ""
-    @Persisted var description2: String = ""
-    @Persisted var isChecked2: Bool = false
-    @Persisted var bookImage2: String = ""
-    
-    convenience init(id: Int) {
-        self.init()
-        self.title2 = title2
-    }
-}
-
-final class ViewController: UIViewController {
+final class BookListViewController: UIViewController {
     
     let realm = try! Realm()
     var savedBook: [Book2] = []
-    
-    private lazy var bookTableView: UITableView = {
-        let tableView = UITableView()
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.allowsSelection = false
-        tableView.register(BookTableViewCell.self, forCellReuseIdentifier: BookTableViewCell.identifier)
-        return tableView
-    }()
-    
-//    private lazy var bookList: [Book] = [
-//        Book(title : "sd1", description : "책설명dhjfg sjdhgfhsadgf jshgfdjh a   gdsfjka ghsdfkga dkjhga sdkfjghaskdjhfgkjhg", isChecked : false ),
-//        Book(title : "sd2", description : "책설명dhjfg sjdhgfhsadgf jshgfdjh a   gdsfjka ghsdfkga dkjhga sdkfjghaskdjhfgkjhg", isChecked : true ),
-//        Book(title : "sd3", description : "책설명dhjfg sjdhgfhsadgf jshgfdjh a   gdsfjka ghsdfkga dkjhga sdkfjghaskdjhfgkjhg", isChecked : false ),
-//        Book(title : "sd4", description : "책설명dhjfg sjdhgfhsadgf jshgfdjh a   gdsfjka ghsdfkga dkjhga sdkfjghaskdjhfgkjhg", isChecked : true ),
-//        Book(title : "sd5", description : "책설명dhjfg sjdhgfhsadgf jshgfdjh a   gdsfjka ghsdfkga dkjhga sdkfjghaskdjhfgkjhg", isChecked : true )
-//    ]
-    
+
+    let mainView = MainView()
+    lazy var bookTableView = mainView.makeTableView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupNaviBar()
-
+        
         realmRead()
         if savedBook.count == 0 {
             realmCreate()
         }
+        
+        bookTableView.delegate = self
+        bookTableView.dataSource = self
     }
     
     override func viewDidLayoutSubviews() {
@@ -72,7 +42,13 @@ final class ViewController: UIViewController {
 
     
     @objc func didTouchGotoMypage(){
-        navigationController?.pushViewController(MyPageViewController(), animated: false)
+        let vc = MyPageViewController()
+        
+        let likeBookList = savedBook.filter { $0.isChecked2 == true }
+        print(likeBookList)
+        vc.likeBookList = likeBookList
+        
+        navigationController?.pushViewController(vc, animated: false)
     }
     
     @objc func didTouchLikeButton(sender: UIButton){
@@ -86,7 +62,7 @@ final class ViewController: UIViewController {
         if data.isChecked2 {
             cell?.likeButton.setImage(UIImage(systemName: "heart"), for: .normal)
         }else{
-            cell?.likeButton.setImage(UIImage(systemName: "note"), for: .normal)
+            cell?.likeButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
         }
         
         realmUpdate(at: indexpath.row)
@@ -102,11 +78,22 @@ final class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         setupNaviBar()
+        realmRead()
     }
+    
+    func getThumbnailImage(_ index: Int) -> UIImage {
+        let data = savedBook[index]
+        
+        guard let imageUrl = URL(string: data.bookImage2) else { return UIImage(systemName: "stop")! }
+        let imageData = try! Data(contentsOf: imageUrl)
+
+        return UIImage(data: imageData) ?? UIImage(systemName: "stop")!
+    }
+
 
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension BookListViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return savedBook.count
@@ -120,9 +107,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let data = savedBook[indexPath.row]
         cell.bookTitle.text = data.title2
         cell.bookDiscription.text = data.description2
+        cell.bookImage.image = self.getThumbnailImage(indexPath.row)
+        
 
         if data.isChecked2 {
-            cell.likeButton.setImage(UIImage(systemName: "note"), for: .normal)
+            cell.likeButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
         }else {
             cell.likeButton.setImage(UIImage(systemName: "heart"), for: .normal)
         }
@@ -136,7 +125,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension ViewController {
+extension BookListViewController {
     
     func realmCreate(){
         let book = Book2()
@@ -215,6 +204,7 @@ extension ViewController {
     
     func realmRead(){
         savedBook = Array(realm.objects(Book2.self))
+        bookTableView.reloadData()
         //savedBook = a.filter("title2 == '타이틀'")
     }
     
@@ -248,7 +238,12 @@ extension ViewController {
         let taskToDelete = realm.objects(Book2.self)[item]
         try! realm.write{
            realm.delete(taskToDelete)
-           //realm.deleteAll() // 전체 데이터 리셋
+        }
+    }
+    
+    func realmDelateAll() {
+        try! realm.write{
+           realm.deleteAll()
         }
     }
 }

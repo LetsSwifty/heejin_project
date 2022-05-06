@@ -15,7 +15,6 @@ class BookTableViewCell: UITableViewCell {
     
     lazy var bookImage: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(systemName: "note")
         return imageView
     }()
     
@@ -42,19 +41,13 @@ class BookTableViewCell: UITableViewCell {
         
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
         [bookImage, bookTitle, bookDiscription, likeButton].forEach{ contentView.addSubview($0) }
-
-        bookImage.snp.makeConstraints { make in
-            make.leading.equalToSuperview().offset(10)
-            make.height.equalTo(100)
-            make.width.equalTo(70)
-            make.centerY.equalToSuperview()
-        }
         
         bookTitle.snp.makeConstraints { make in
-            make.leading.equalTo(bookImage.snp.trailing).offset(10)
+            make.leading.equalToSuperview().offset(90)
             make.trailing.equalToSuperview().inset(40)
-            make.top.equalTo(bookImage.snp.top).offset(5)
+            make.top.equalToSuperview().offset(5)
         }
         
         bookDiscription.snp.makeConstraints { make in
@@ -64,10 +57,18 @@ class BookTableViewCell: UITableViewCell {
             make.bottom.equalToSuperview().inset(8)
         }
         
+        bookImage.snp.makeConstraints { make in
+            make.leading.equalToSuperview().offset(10)
+            make.width.equalTo(70)
+            make.height.equalTo(80)
+            make.centerY.equalToSuperview()
+        }
+
+        
         likeButton.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
             make.trailing.equalToSuperview().inset(10)
-            make.width.height.equalTo(20)
+            make.width.height.equalTo(30)
         }
 
     }
@@ -79,9 +80,6 @@ class BookTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
     }
-    
-    
-    
     
 //    public func configure(with titles: [Title]) {
 //        self.titles = titles

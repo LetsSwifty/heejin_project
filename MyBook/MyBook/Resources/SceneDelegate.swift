@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windonScene) // or window?.windowScene = windonScene
             
-        let rootVC = ViewController()
+        let rootVC = BookListViewController()
         let navVC = UINavigationController(rootViewController: rootVC)
             
         self.window?.rootViewController = navVC
