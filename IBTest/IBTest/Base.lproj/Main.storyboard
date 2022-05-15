@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Oa1-JA-J6G">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="A75-5I-BDP">
+            <objects>
+                <viewController id="Oa1-JA-J6G" customClass="ViewController" customModule="IBTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jga-5p-SbR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgy-oa-xk8">
+                                <rect key="frame" x="20" y="164" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8q4-I9-IaS">
+                                <rect key="frame" x="20" y="211" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELY-8V-eob">
+                                <rect key="frame" x="20" y="281" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ozc-22-0af">
+                                <rect key="frame" x="20" y="337" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HS5-bN-D7E">
+                                <rect key="frame" x="20" y="392" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIO-VU-vSz">
+                                <rect key="frame" x="321.5" y="159" width="73" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button1"/>
+                                <connections>
+                                    <action selector="button01:" destination="Oa1-JA-J6G" eventType="touchUpInside" id="6nb-1q-Ksj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgi-d8-bMi">
+                                <rect key="frame" x="320" y="206" width="76" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button2"/>
+                                <connections>
+                                    <action selector="button02:" destination="Oa1-JA-J6G" eventType="touchUpInside" id="tC6-HN-42C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRI-dh-kav">
+                                <rect key="frame" x="320" y="276" width="76" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button3"/>
+                                <connections>
+                                    <action selector="button03:" destination="Oa1-JA-J6G" eventType="touchUpInside" id="g4w-PV-3ih"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7y5-2V-gSI">
+                                <rect key="frame" x="320" y="333" width="76" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button4"/>
+                                <connections>
+                                    <action selector="button04:" destination="Oa1-JA-J6G" eventType="touchUpInside" id="fpq-sn-aVn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koP-Ly-WZN">
+                                <rect key="frame" x="320" y="387" width="76" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button5"/>
+                                <connections>
+                                    <action selector="button05:" destination="Oa1-JA-J6G" eventType="touchUpInside" id="aOc-mC-198"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0eS-75-UjV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mgy-oa-xk8" firstAttribute="centerY" secondItem="UIO-VU-vSz" secondAttribute="centerY" id="7NQ-zN-YRu"/>
+                            <constraint firstItem="koP-Ly-WZN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HS5-bN-D7E" secondAttribute="trailing" constant="8" symbolic="YES" id="7wU-Hb-OHT"/>
+                            <constraint firstItem="ELY-8V-eob" firstAttribute="leading" secondItem="8q4-I9-IaS" secondAttribute="leading" id="9Ch-wM-xm3"/>
+                            <constraint firstItem="Ozc-22-0af" firstAttribute="top" secondItem="ELY-8V-eob" secondAttribute="bottom" constant="35" id="C6h-Em-L6Q"/>
+                            <constraint firstItem="ELY-8V-eob" firstAttribute="leading" secondItem="jga-5p-SbR" secondAttribute="leadingMargin" id="DfJ-rz-4BZ"/>
+                            <constraint firstItem="HS5-bN-D7E" firstAttribute="top" secondItem="Ozc-22-0af" secondAttribute="bottom" constant="34" id="Dro-l2-RPB"/>
+                            <constraint firstItem="7y5-2V-gSI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ozc-22-0af" secondAttribute="trailing" symbolic="YES" id="EGP-BN-qRT"/>
+                            <constraint firstItem="0eS-75-UjV" firstAttribute="trailing" secondItem="7y5-2V-gSI" secondAttribute="trailing" constant="18" id="ESd-Ub-hX6"/>
+                            <constraint firstItem="Mgy-oa-xk8" firstAttribute="top" secondItem="0eS-75-UjV" secondAttribute="top" constant="120" id="Emv-lF-NSF"/>
+                            <constraint firstItem="ELY-8V-eob" firstAttribute="leading" secondItem="Ozc-22-0af" secondAttribute="leading" id="Id8-4t-3GF"/>
+                            <constraint firstItem="HS5-bN-D7E" firstAttribute="centerY" secondItem="koP-Ly-WZN" secondAttribute="centerY" id="P6E-uh-i7X"/>
+                            <constraint firstItem="NRI-dh-kav" firstAttribute="centerX" secondItem="UIO-VU-vSz" secondAttribute="centerX" id="Q41-dd-exF"/>
+                            <constraint firstItem="0eS-75-UjV" firstAttribute="trailing" secondItem="koP-Ly-WZN" secondAttribute="trailing" constant="18" id="XXL-8y-owF"/>
+                            <constraint firstItem="0eS-75-UjV" firstAttribute="trailing" secondItem="wgi-d8-bMi" secondAttribute="trailing" constant="18" id="Xuv-tJ-8jf"/>
+                            <constraint firstItem="ELY-8V-eob" firstAttribute="leading" secondItem="Mgy-oa-xk8" secondAttribute="leading" id="YCa-6o-c6T"/>
+                            <constraint firstItem="NRI-dh-kav" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="koP-Ly-WZN" secondAttribute="leading" id="a02-ud-Wy9"/>
+                            <constraint firstItem="7y5-2V-gSI" firstAttribute="top" secondItem="NRI-dh-kav" secondAttribute="bottom" constant="26" id="cHx-6y-8Hm"/>
+                            <constraint firstItem="ELY-8V-eob" firstAttribute="leading" secondItem="HS5-bN-D7E" secondAttribute="leading" id="eIA-Iv-6r5"/>
+                            <constraint firstItem="wgi-d8-bMi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8q4-I9-IaS" secondAttribute="trailing" constant="8" symbolic="YES" id="fcV-1k-FN7"/>
+                            <constraint firstItem="NRI-dh-kav" firstAttribute="top" secondItem="wgi-d8-bMi" secondAttribute="bottom" constant="39" id="g9i-sM-tf2"/>
+                            <constraint firstItem="NRI-dh-kav" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wgi-d8-bMi" secondAttribute="leading" id="gen-Us-u5z"/>
+                            <constraint firstItem="UIO-VU-vSz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Mgy-oa-xk8" secondAttribute="trailing" constant="8" symbolic="YES" id="iCh-dH-vbu"/>
+                            <constraint firstItem="NRI-dh-kav" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ELY-8V-eob" secondAttribute="trailing" constant="8" symbolic="YES" id="k6H-uK-Frh"/>
+                            <constraint firstItem="ELY-8V-eob" firstAttribute="top" secondItem="8q4-I9-IaS" secondAttribute="bottom" constant="49" id="lnH-h2-Xuz"/>
+                            <constraint firstItem="ELY-8V-eob" firstAttribute="centerY" secondItem="NRI-dh-kav" secondAttribute="centerY" id="lnf-nz-4c8"/>
+                            <constraint firstItem="ELY-8V-eob" firstAttribute="top" secondItem="jga-5p-SbR" secondAttribute="top" constant="281" id="no0-AF-xid"/>
+                            <constraint firstItem="NRI-dh-kav" firstAttribute="leading" secondItem="7y5-2V-gSI" secondAttribute="leading" id="vSN-5v-t20"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label01" destination="Mgy-oa-xk8" id="yPe-cn-R7P"/>
+                        <outlet property="label02" destination="8q4-I9-IaS" id="7iP-Dy-ye5"/>
+                        <outlet property="label03" destination="ELY-8V-eob" id="MEM-Iy-Rnt"/>
+                        <outlet property="label04" destination="Ozc-22-0af" id="VXg-Ow-1rg"/>
+                        <outlet property="label05" destination="HS5-bN-D7E" id="T1b-Oh-dTH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vc8-m4-Rkm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="142.63392857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

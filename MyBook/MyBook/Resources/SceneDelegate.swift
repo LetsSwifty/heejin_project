@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             
         guard let windonScene = (scene as? UIWindowScene) else {return}
         
-        window = UIWindow(windowScene: windonScene) // or window?.windowScene = windonScene
+        window = UIWindow(windowScene: windonScene)
             
         let rootVC = BookListViewController()
         let navVC = UINavigationController(rootViewController: rootVC)

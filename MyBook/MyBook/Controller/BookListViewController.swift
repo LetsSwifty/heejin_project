@@ -31,6 +31,8 @@ final class BookListViewController: UIViewController {
         
         bookTableView.delegate = self
         bookTableView.dataSource = self
+        
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
     }
     
     override func viewDidLayoutSubviews() {
@@ -51,10 +53,12 @@ final class BookListViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: false)
     }
     
-    @objc func didTouchLikeButton(sender: UIButton){
+    @objc func didTouchLikeButton(sender: UIButton) {
         
         let point = sender.convert(CGPoint.zero, to: bookTableView)
+        print(point)
         guard let indexpath = bookTableView.indexPathForRow(at: point) else { return }
+        print(indexpath)
         
         let cell = bookTableView.cellForRow(at: indexpath) as? BookTableViewCell
         let data = savedBook[indexpath.row]
