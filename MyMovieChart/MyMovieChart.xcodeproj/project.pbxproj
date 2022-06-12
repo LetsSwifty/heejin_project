@@ -12,6 +12,7 @@
 		F0128D46282170B5005BE0B9 /* TheatherListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0128D45282170B5005BE0B9 /* TheatherListController.swift */; };
 		F0128D4928218655005BE0B9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0128D4828218655005BE0B9 /* MapKit.framework */; };
 		F0128D4B282186CB005BE0B9 /* TheaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0128D4A282186CB005BE0B9 /* TheaterViewController.swift */; };
+		F06E718F28313E0400DCE954 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = F06E718E28313E0400DCE954 /* 1.png */; };
 		F0DEAA8E28182D1C00964915 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DEAA8D28182D1C00964915 /* AppDelegate.swift */; };
 		F0DEAA9028182D1C00964915 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DEAA8F28182D1C00964915 /* SceneDelegate.swift */; };
 		F0DEAA9528182D1C00964915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0DEAA9328182D1C00964915 /* Main.storyboard */; };
@@ -21,7 +22,6 @@
 		F0DEAAA42818378F00964915 /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DEAAA32818378F00964915 /* MovieVO.swift */; };
 		F0DEAAA62819A1BF00964915 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DEAAA52819A1BF00964915 /* MovieCell.swift */; };
 		F0DEAAAF2819AB4800964915 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DEAAAE2819AB4800964915 /* 3.png */; };
-		F0DEAAB12819AB5900964915 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DEAAB02819AB5900964915 /* 1.png */; };
 		F0DEAAB52819AB8600964915 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DEAAB42819AB8600964915 /* 2.png */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +31,7 @@
 		F0128D45282170B5005BE0B9 /* TheatherListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheatherListController.swift; sourceTree = "<group>"; };
 		F0128D4828218655005BE0B9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F0128D4A282186CB005BE0B9 /* TheaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterViewController.swift; sourceTree = "<group>"; };
+		F06E718E28313E0400DCE954 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		F0DEAA8A28182D1C00964915 /* MyMovieChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMovieChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0DEAA8D28182D1C00964915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0DEAA8F28182D1C00964915 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		F0DEAAA32818378F00964915 /* MovieVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
 		F0DEAAA52819A1BF00964915 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		F0DEAAAE2819AB4800964915 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
-		F0DEAAB02819AB5900964915 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = ../../../../../1.png; sourceTree = "<group>"; };
 		F0DEAAB42819AB8600964915 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,7 +107,7 @@
 		F0DEAAA72819A74E00964915 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				F0DEAAB02819AB5900964915 /* 1.png */,
+				F06E718E28313E0400DCE954 /* 1.png */,
 				F0DEAAB42819AB8600964915 /* 2.png */,
 				F0DEAAAE2819AB4800964915 /* 3.png */,
 			);
@@ -177,7 +177,7 @@
 				F0DEAAAF2819AB4800964915 /* 3.png in Resources */,
 				F0DEAA9728182D1D00964915 /* Assets.xcassets in Resources */,
 				F0DEAA9528182D1C00964915 /* Main.storyboard in Resources */,
-				F0DEAAB12819AB5900964915 /* 1.png in Resources */,
+				F06E718F28313E0400DCE954 /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
