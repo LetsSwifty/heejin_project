@@ -36,6 +36,18 @@ class GalleryCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
 
+    func reloadImage(url: String) {
+        print(url)
+        
+        DispatchQueue.global().async {
+            let _url = URL(string: url)
+            let data = try? Data(contentsOf: _url!)
+            
+            DispatchQueue.main.async {
+                self.photoImageView.image = UIImage(data: data!)
+            }
+        }
+    }
 
     
     

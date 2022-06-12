@@ -23,3 +23,14 @@
 - MVC 패턴 적용
 - 이미지 로드 로직 추가
 - 마이페이지 개발 완료 및 기능 구현 완료 (리팩토링 필요!)
+
+# My Gallery App
+
+**사용 기술**
+
+- UIKit(UICollectionView) + Snapkit
+- Alamofire
+- infinite scroll + paging
+- GCD
+- pull to refresh
+- keychain

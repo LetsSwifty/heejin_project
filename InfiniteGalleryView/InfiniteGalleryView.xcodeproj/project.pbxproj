@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7219F70C9ECC868CFEEEC405 /* Pods_InfiniteGalleryView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB3C6E40F8F8FB862987E45 /* Pods_InfiniteGalleryView.framework */; };
 		F05B0DA62855B1D60029CD3C /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B0DA52855B1D60029CD3C /* GalleryCollectionViewCell.swift */; };
+		F05B0DA82855D5240029CD3C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B0DA72855D5240029CD3C /* Model.swift */; };
 		F0CB988E284C45FD002FCD94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB988D284C45FD002FCD94 /* AppDelegate.swift */; };
 		F0CB9890284C45FD002FCD94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB988F284C45FD002FCD94 /* SceneDelegate.swift */; };
 		F0CB9892284C45FD002FCD94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB9891284C45FD002FCD94 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 		10D378391EA97397225803DE /* Pods-InfiniteGalleryView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteGalleryView.release.xcconfig"; path = "Target Support Files/Pods-InfiniteGalleryView/Pods-InfiniteGalleryView.release.xcconfig"; sourceTree = "<group>"; };
 		DEB3C6E40F8F8FB862987E45 /* Pods_InfiniteGalleryView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfiniteGalleryView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05B0DA52855B1D60029CD3C /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		F05B0DA72855D5240029CD3C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F0CB988A284C45FD002FCD94 /* InfiniteGalleryView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteGalleryView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CB988D284C45FD002FCD94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0CB988F284C45FD002FCD94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				F0CB9898284C45FF002FCD94 /* LaunchScreen.storyboard */,
 				F0CB989B284C45FF002FCD94 /* Info.plist */,
 				F05B0DA52855B1D60029CD3C /* GalleryCollectionViewCell.swift */,
+				F05B0DA72855D5240029CD3C /* Model.swift */,
 			);
 			path = InfiniteGalleryView;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F05B0DA82855D5240029CD3C /* Model.swift in Sources */,
 				F0CB9892284C45FD002FCD94 /* ViewController.swift in Sources */,
 				F05B0DA62855B1D60029CD3C /* GalleryCollectionViewCell.swift in Sources */,
 				F0CB988E284C45FD002FCD94 /* AppDelegate.swift in Sources */,

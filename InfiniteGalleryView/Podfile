@@ -8,5 +8,6 @@ target 'InfiniteGalleryView' do
   # Pods for InfiniteGalleryView
   pod 'RealmSwift'
   pod 'SnapKit'
+  pod 'Alamofire'
 
 end
