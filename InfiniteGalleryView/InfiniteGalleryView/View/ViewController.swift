@@ -5,7 +5,7 @@
 //  Created by 김희진 on 2022/06/05.
 //
 
-//UICollectionView, AF, infinite scroll + paging, GCD, pull to refresh, keychain
+// UICollectionView, AF, infinite scroll + paging, GCD, pull to refresh
 
 import UIKit
 import SnapKit
@@ -14,14 +14,11 @@ import Alamofire
 class ViewController: UIViewController {
 
     private var imageURLArr: [String] = []
-    let refresher = UIRefreshControl()
-    var currentPage: Int = 1
-    
+    private var indexArr: [IndexPath] = []
+    private let refresher = UIRefreshControl()
+    var currentPage: Int = 0
     var isLoading: Bool = false
-     
 
-    var galleryCollectionViewCell: UICollectionViewCell = GalleryCollectionViewCell()
-    
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -29,24 +26,16 @@ class ViewController: UIViewController {
         collectionView.register(GalleryCollectionViewCell.self, forCellWithReuseIdentifier: GalleryCollectionViewCell.identifier)
         collectionView.delegate = self
         collectionView.dataSource = self
+        refresher.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+        collectionView.refreshControl = refresher
         return collectionView
     }()
-    
-    var uiview: UIView =  {
-        let view = UIView()
-        return view
-    }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         addNavigation()
-        addUI()
         fetch()
-        
-        refresher.addTarget(self, action: #selector(refreshData), for: .valueChanged)
-        collectionView.refreshControl = refresher
-        
     }
     
     func addNavigation(){
@@ -54,8 +43,6 @@ class ViewController: UIViewController {
     }
 
     @objc func refreshData() {
-
-        
         collectionView.refreshControl?.beginRefreshing()
 
         imageURLArr = []
@@ -65,9 +52,9 @@ class ViewController: UIViewController {
         collectionView.refreshControl?.endRefreshing()
     }
     
-    func addUI(){
-        view.backgroundColor = .white
-        [collectionView].forEach{ view.addSubview($0) }
+    override func viewDidLayoutSubviews(){
+        view.backgroundColor = .magenta
+        view.addSubview(collectionView)
         collectionView.snp.makeConstraints {
             $0.edges.equalTo(view.safeAreaLayoutGuide)
         }
@@ -79,10 +66,9 @@ class ViewController: UIViewController {
             "Accept": "application/json"
         ]
         
-        self.currentPage = self.currentPage + 1
+        self.currentPage += 1
         
-        let url = "https://api.unsplash.com/photos?page=\(self.currentPage)&per_page=30&client_id="
-        
+        let url = "https://api.unsplash.com/photos?page=\(self.currentPage)&per_page=30&client_id=\(Bundle.main.apiKey)"
 
         AF.request(url,
                    method: .get,
@@ -94,13 +80,16 @@ class ViewController: UIViewController {
             switch response.result {
             case .success(let value):
                     
-                for i in value {
-                    self.imageURLArr.append(i.urls.thumb)
+                self.indexArr = []
+                let currentCount = self.imageURLArr.count
+
+                for (index, value) in value.enumerated() {
+                    self.indexArr.append(IndexPath(row: index + currentCount, section: 0))
+                    self.imageURLArr.append(value.urls.thumb)
                 }
 
-                self.collectionView.reloadData()
-                
                 self.isLoading = false
+                self.collectionView.insertItems(at: self.indexArr)
 
             case .failure(let error):
                 print("네트워크 에러: ", error.localizedDescription)
@@ -130,23 +119,11 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
                 cell.reloadImage(url: imageURLArr[indexPath.row])
             }
         }
-        
-        
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("SDf")
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath){
-        print("SDDD")
-    }
-    
-    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         guard scrollView.contentSize.height > scrollView.bounds.height else { return }
-        
         if scrollView.contentSize.height - scrollView.bounds.height <= scrollView.contentOffset.y + 30 {
             if isLoading {
                 return
@@ -155,7 +132,6 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
             fetch()
         }
     }
-    
 }
 
 extension ViewController : UICollectionViewDelegateFlowLayout{

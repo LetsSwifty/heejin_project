@@ -17,13 +17,18 @@ class GalleryCollectionViewCell: UICollectionViewCell {
         return imageView
     }()
         
-    override init(frame: CGRect){
-        super.init(frame: frame)
-        contentView.addSubview(photoImageView)
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setUpCell()
     }
     
-    required init?(coder: NSCoder) {
-        fatalError()
+    override init(frame: CGRect) {
+        super.init(frame: .zero)
+        setUpCell()
+    }
+
+    func setUpCell(){
+        contentView.addSubview(photoImageView)
     }
 
     override func layoutSubviews() {
@@ -33,22 +38,16 @@ class GalleryCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     func reloadImage(url: String) {
-        print(url)
-        
         DispatchQueue.global().async {
             let _url = URL(string: url)
             let data = try? Data(contentsOf: _url!)
-            
+                        
             DispatchQueue.main.async {
                 self.photoImageView.image = UIImage(data: data!)
             }
         }
     }
-
-    
-    
 }

@@ -10,6 +10,8 @@
 		7219F70C9ECC868CFEEEC405 /* Pods_InfiniteGalleryView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB3C6E40F8F8FB862987E45 /* Pods_InfiniteGalleryView.framework */; };
 		F05B0DA62855B1D60029CD3C /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B0DA52855B1D60029CD3C /* GalleryCollectionViewCell.swift */; };
 		F05B0DA82855D5240029CD3C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B0DA72855D5240029CD3C /* Model.swift */; };
+		F05B0DB3285709250029CD3C /* GalleryInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F05B0DB2285709250029CD3C /* GalleryInfo.plist */; };
+		F05B0DB62857098D0029CD3C /* InfiniteGalleryView++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B0DB52857098D0029CD3C /* InfiniteGalleryView++Bundle.swift */; };
 		F0CB988E284C45FD002FCD94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB988D284C45FD002FCD94 /* AppDelegate.swift */; };
 		F0CB9890284C45FD002FCD94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB988F284C45FD002FCD94 /* SceneDelegate.swift */; };
 		F0CB9892284C45FD002FCD94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB9891284C45FD002FCD94 /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 		DEB3C6E40F8F8FB862987E45 /* Pods_InfiniteGalleryView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfiniteGalleryView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05B0DA52855B1D60029CD3C /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		F05B0DA72855D5240029CD3C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F05B0DB2285709250029CD3C /* GalleryInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GalleryInfo.plist; sourceTree = "<group>"; };
+		F05B0DB52857098D0029CD3C /* InfiniteGalleryView++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InfiniteGalleryView++Bundle.swift"; sourceTree = "<group>"; };
 		F0CB988A284C45FD002FCD94 /* InfiniteGalleryView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteGalleryView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CB988D284C45FD002FCD94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0CB988F284C45FD002FCD94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,51 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F05B0DA9285661980029CD3C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F0CB9893284C45FD002FCD94 /* Main.storyboard */,
+				F0CB9896284C45FF002FCD94 /* Assets.xcassets */,
+				F0CB9898284C45FF002FCD94 /* LaunchScreen.storyboard */,
+				F0CB988D284C45FD002FCD94 /* AppDelegate.swift */,
+				F0CB988F284C45FD002FCD94 /* SceneDelegate.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F05B0DAA285661D90029CD3C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F05B0DAB285661E30029CD3C /* Cell */,
+				F0CB9891284C45FD002FCD94 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F05B0DAB285661E30029CD3C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F05B0DA52855B1D60029CD3C /* GalleryCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F05B0DAC285661E90029CD3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F05B0DA72855D5240029CD3C /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F05B0DB42857096A0029CD3C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F05B0DB52857098D0029CD3C /* InfiniteGalleryView++Bundle.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		F0CB9881284C45FD002FCD94 = {
 			isa = PBXGroup;
 			children = (
@@ -84,15 +133,12 @@
 		F0CB988C284C45FD002FCD94 /* InfiniteGalleryView */ = {
 			isa = PBXGroup;
 			children = (
-				F0CB988D284C45FD002FCD94 /* AppDelegate.swift */,
-				F0CB988F284C45FD002FCD94 /* SceneDelegate.swift */,
-				F0CB9891284C45FD002FCD94 /* ViewController.swift */,
-				F0CB9893284C45FD002FCD94 /* Main.storyboard */,
-				F0CB9896284C45FF002FCD94 /* Assets.xcassets */,
-				F0CB9898284C45FF002FCD94 /* LaunchScreen.storyboard */,
+				F05B0DB42857096A0029CD3C /* Extension */,
+				F05B0DAC285661E90029CD3C /* Model */,
+				F05B0DAA285661D90029CD3C /* View */,
+				F05B0DA9285661980029CD3C /* Resource */,
 				F0CB989B284C45FF002FCD94 /* Info.plist */,
-				F05B0DA52855B1D60029CD3C /* GalleryCollectionViewCell.swift */,
-				F05B0DA72855D5240029CD3C /* Model.swift */,
+				F05B0DB2285709250029CD3C /* GalleryInfo.plist */,
 			);
 			path = InfiniteGalleryView;
 			sourceTree = "<group>";
@@ -160,6 +206,7 @@
 				F0CB989A284C45FF002FCD94 /* LaunchScreen.storyboard in Resources */,
 				F0CB9897284C45FF002FCD94 /* Assets.xcassets in Resources */,
 				F0CB9895284C45FD002FCD94 /* Main.storyboard in Resources */,
+				F05B0DB3285709250029CD3C /* GalleryInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +264,7 @@
 				F05B0DA62855B1D60029CD3C /* GalleryCollectionViewCell.swift in Sources */,
 				F0CB988E284C45FD002FCD94 /* AppDelegate.swift in Sources */,
 				F0CB9890284C45FD002FCD94 /* SceneDelegate.swift in Sources */,
+				F05B0DB62857098D0029CD3C /* InfiniteGalleryView++Bundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

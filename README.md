@@ -33,4 +33,3 @@
 - infinite scroll + paging
 - GCD
 - pull to refresh
-- keychain
