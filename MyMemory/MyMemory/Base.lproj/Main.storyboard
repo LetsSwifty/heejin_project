@@ -19,7 +19,18 @@
                         <view key="tableFooterView" contentMode="scaleToFill" id="sCq-pO-dfU">
                             <rect key="frame" x="0.0" y="227" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSA-GL-RJ4" customClass="CSLogButton" customModule="MyMemory" customModuleProvider="target">
+                                    <rect key="frame" x="173.5" y="6.5" width="67" height="31"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBrownColor"/>
+                            <constraints>
+                                <constraint firstItem="FSA-GL-RJ4" firstAttribute="centerX" secondItem="sCq-pO-dfU" secondAttribute="centerX" id="JId-3A-7EN"/>
+                                <constraint firstItem="FSA-GL-RJ4" firstAttribute="centerY" secondItem="sCq-pO-dfU" secondAttribute="centerY" id="ZuE-Kg-xBQ"/>
+                            </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="memoCell" rowHeight="80" id="H5M-9q-qjE" customClass="MeMoTableViewCell" customModule="MyMemory" customModuleProvider="target">
@@ -301,6 +312,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
