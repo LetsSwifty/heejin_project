@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F01C442028CF016E00474C46 /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01C441F28CF016E00474C46 /* SideBarVC.swift */; };
+		F01C442228CF074B00474C46 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01C442128CF074B00474C46 /* ProfileVC.swift */; };
 		F021C71728CD640400A01E64 /* CSLogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F021C71628CD640400A01E64 /* CSLogButton.swift */; };
 		F05B0DF42868CC700029CD3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B0DF32868CC700029CD3C /* AppDelegate.swift */; };
 		F05B0DF62868CC700029CD3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B0DF52868CC700029CD3C /* SceneDelegate.swift */; };
@@ -17,6 +19,7 @@
 		F05B0E0E2868CC720029CD3C /* MyMemoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B0E0D2868CC720029CD3C /* MyMemoryTests.swift */; };
 		F05B0E182868CC720029CD3C /* MyMemoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B0E172868CC720029CD3C /* MyMemoryUITests.swift */; };
 		F05B0E1A2868CC720029CD3C /* MyMemoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B0E192868CC720029CD3C /* MyMemoryUITestsLaunchTests.swift */; };
+		F076FD2528CEFB7C008F853F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F076FD2328CEFB7C008F853F /* SWRevealViewController.m */; };
 		F0BFAAE3289EC8C300FB499E /* MemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFAAE2289EC8C300FB499E /* MemoListVC.swift */; };
 		F0BFAAE5289EC8E000FB499E /* MemoFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFAAE4289EC8E000FB499E /* MemoFormVC.swift */; };
 		F0BFAAE7289EC8EA00FB499E /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFAAE6289EC8EA00FB499E /* MemoReadVC.swift */; };
@@ -42,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F01C441F28CF016E00474C46 /* SideBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarVC.swift; sourceTree = "<group>"; };
+		F01C442128CF074B00474C46 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		F021C71628CD640400A01E64 /* CSLogButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSLogButton.swift; sourceTree = "<group>"; };
 		F05B0DF02868CC700029CD3C /* MyMemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05B0DF32868CC700029CD3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +61,9 @@
 		F05B0E132868CC720029CD3C /* MyMemoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMemoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05B0E172868CC720029CD3C /* MyMemoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMemoryUITests.swift; sourceTree = "<group>"; };
 		F05B0E192868CC720029CD3C /* MyMemoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMemoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F076FD2228CEFB7B008F853F /* MyMemory-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyMemory-Bridging-Header.h"; sourceTree = "<group>"; };
+		F076FD2328CEFB7C008F853F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../Chapter04-SideBar/Chapter04-SideBar/SWRevealViewController.m"; sourceTree = "<group>"; };
+		F076FD2428CEFB7C008F853F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../Chapter04-SideBar/Chapter04-SideBar/SWRevealViewController.h"; sourceTree = "<group>"; };
 		F0BFAAE2289EC8C300FB499E /* MemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListVC.swift; sourceTree = "<group>"; };
 		F0BFAAE4289EC8E000FB499E /* MemoFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFormVC.swift; sourceTree = "<group>"; };
 		F0BFAAE6289EC8EA00FB499E /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
@@ -111,6 +119,8 @@
 		F05B0DF22868CC700029CD3C /* MyMemory */ = {
 			isa = PBXGroup;
 			children = (
+				F076FD2428CEFB7C008F853F /* SWRevealViewController.h */,
+				F076FD2328CEFB7C008F853F /* SWRevealViewController.m */,
 				F05B0DF32868CC700029CD3C /* AppDelegate.swift */,
 				F05B0DF52868CC700029CD3C /* SceneDelegate.swift */,
 				F05B0DF92868CC700029CD3C /* Main.storyboard */,
@@ -124,6 +134,9 @@
 				F0BFAAE8289EC99600FB499E /* MeMoTableViewCell.swift */,
 				F0BFAAEA289ECA9D00FB499E /* MemoData.swift */,
 				F021C71628CD640400A01E64 /* CSLogButton.swift */,
+				F076FD2228CEFB7B008F853F /* MyMemory-Bridging-Header.h */,
+				F01C441F28CF016E00474C46 /* SideBarVC.swift */,
+				F01C442128CF074B00474C46 /* ProfileVC.swift */,
 			);
 			path = MyMemory;
 			sourceTree = "<group>";
@@ -213,6 +226,7 @@
 				TargetAttributes = {
 					F05B0DEF2868CC700029CD3C = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					F05B0E082868CC720029CD3C = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -276,13 +290,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F01C442228CF074B00474C46 /* ProfileVC.swift in Sources */,
 				F021C71728CD640400A01E64 /* CSLogButton.swift in Sources */,
+				F01C442028CF016E00474C46 /* SideBarVC.swift in Sources */,
 				F05B0DFE2868CC700029CD3C /* MyMemory.xcdatamodeld in Sources */,
 				F0BFAAEB289ECA9D00FB499E /* MemoData.swift in Sources */,
 				F0BFAAE5289EC8E000FB499E /* MemoFormVC.swift in Sources */,
 				F0BFAAE7289EC8EA00FB499E /* MemoReadVC.swift in Sources */,
 				F0BFAAE9289EC99600FB499E /* MeMoTableViewCell.swift in Sources */,
 				F05B0DF42868CC700029CD3C /* AppDelegate.swift in Sources */,
+				F076FD2528CEFB7C008F853F /* SWRevealViewController.m in Sources */,
 				F0BFAAE3289EC8C300FB499E /* MemoListVC.swift in Sources */,
 				F05B0DF62868CC700029CD3C /* SceneDelegate.swift in Sources */,
 			);
@@ -459,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ACU8AXMR55;
@@ -482,6 +500,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dooly.ios.MyMemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyMemory/MyMemory-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -492,6 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ACU8AXMR55;
@@ -515,6 +536,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dooly.ios.MyMemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyMemory/MyMemory-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
