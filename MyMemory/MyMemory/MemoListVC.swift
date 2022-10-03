@@ -26,9 +26,17 @@ class MemoListVC: UITableViewController {
             self.view.addGestureRecognizer(revealVC.panGestureRecognizer())
         }
     }
-    
+ 
+    // MemoListVC는 가장 처음 보이게 되는 VC이다. 따라서 UserInfoKey.tutorial 값을 찾아서 이 값이 없다면 튜토리얼 화면을 띄워준다. 
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+        let ud = UserDefaults.standard
+        if ud.bool(forKey: UserInfoKey.tutorial) == false {
+            let vc = self.instanceTutorialVC(name: "MasterVC")
+            vc?.modalPresentationStyle = .fullScreen
+            self.present(vc!, animated: false)
+            return
+        }
+        
         self.tableView.reloadData()
     }
     

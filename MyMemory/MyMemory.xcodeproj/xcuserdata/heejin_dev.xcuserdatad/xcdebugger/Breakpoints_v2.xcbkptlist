@@ -3,4 +3,195 @@
    uuid = "3FF3F090-8D19-41A2-88CA-EBD58D1E3D98"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E01CE84-2578-4E9E-B84F-449154C3C03A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyMemory/Tutorial/TutorialContentsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "09792539-616A-4587-8106-3E093452DCB3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyMemory/Tutorial/TutorialContentsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7486A42F-296D-41CD-979E-2F109A68832C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyMemory/Utils.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "instanceTutorialVC(name:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2C0C6738-80D8-47C9-9C5F-26DF89092017"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyMemory/Tutorial/TutorialContentsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "TutorialContentsVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "2C0C6738-80D8-47C9-9C5F-26DF89092017 - dc18240011f281c0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyMemory.TutorialContentsVC.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; MyMemory.TutorialContentsVC"
+                  moduleName = "MyMemory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heejin_dev/Desktop/study/Jeuncci/heejin_project/MyMemory/MyMemory/Tutorial/TutorialContentsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "2C0C6738-80D8-47C9-9C5F-26DF89092017 - 823f5af533f4e9f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyMemory.TutorialContentsVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; MyMemory.TutorialContentsVC"
+                  moduleName = "MyMemory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heejin_dev/Desktop/study/Jeuncci/heejin_project/MyMemory/MyMemory/Tutorial/TutorialContentsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "157">
+               </Location>
+               <Location
+                  uuid = "2C0C6738-80D8-47C9-9C5F-26DF89092017 - f2915da873de142"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyMemory.TutorialContentsVC.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MyMemory.TutorialContentsVC&gt;"
+                  moduleName = "MyMemory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heejin_dev/Desktop/study/Jeuncci/heejin_project/MyMemory/MyMemory/Tutorial/TutorialContentsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  uuid = "2C0C6738-80D8-47C9-9C5F-26DF89092017 - d230c10ec13ede49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyMemory.TutorialContentsVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MyMemory.TutorialContentsVC&gt;"
+                  moduleName = "MyMemory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heejin_dev/Desktop/study/Jeuncci/heejin_project/MyMemory/MyMemory/Tutorial/TutorialContentsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  uuid = "2C0C6738-80D8-47C9-9C5F-26DF89092017 - 848bb70daea0a5e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyMemory.TutorialContentsVC.__deallocating_deinit"
+                  moduleName = "MyMemory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heejin_dev/Desktop/study/Jeuncci/heejin_project/MyMemory/MyMemory/Tutorial/TutorialContentsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "021BBCBF-EDDD-420C-BABD-277748D60271"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyMemory/Tutorial/TutorialMasterVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "getContentVC(atIndex:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A082C7FF-0267-4FCA-A99F-8D6EB0226669"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyMemory/Tutorial/TutorialMasterVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "getContentVC(atIndex:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "21FA6306-F624-4955-86EE-DC197F2BA64E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyMemory/Tutorial/TutorialMasterVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "getContentVC(atIndex:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
