@@ -7,13 +7,20 @@
 
 import Foundation
 import UIKit
+import CoreData
 
-class MemoListVC: UITableViewController {
+class MemoListVC: UITableViewController, UISearchBarDelegate {
 
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    lazy var dao = MemoDAO()
+    
+    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.delegate = self
+        // 검색 바의 키보드에서 리턴 키가 항상 활성화되어 있도록 처리
+        searchBar.enablesReturnKeyAutomatically = false
         
         if let revealVC = self.revealViewController() { // SWRevealViewController라이브러리의 revealViewController 객체를 읽어온다.
             let btn = UIBarButtonItem() // 객체가 있으면 바버튼을 설정해준다.
@@ -36,6 +43,9 @@ class MemoListVC: UITableViewController {
             self.present(vc!, animated: false)
             return
         }
+
+        // 코어 데이터에 저장된 데이터를 가져온다
+        self.appDelegate.memoList = self.dao.fetch()
         
         self.tableView.reloadData()
     }
@@ -72,5 +82,28 @@ class MemoListVC: UITableViewController {
         
         vc.param = row
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        let data = self.appDelegate.memoList[indexPath.row]
+
+        // UI를 그리는 memoList에서 indexPath를 이용해 데이터를 가져와서 그 데이터를 코어데이터에서 삭제한다.
+        if dao.delete(data.objectID!) {
+            // 코어데이터에서 삭제한 후 memoList에서 삭제한다.
+            self.appDelegate.memoList.remove(at: indexPath.row)
+            // 테이블뷰에서 지운다.
+            self.tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let keyword = searchBar.text
+        
+        self.appDelegate.memoList = self.dao.fetch(keyword: keyword)
+        self.tableView.reloadData()
     }
 }

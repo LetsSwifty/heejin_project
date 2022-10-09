@@ -15,6 +15,8 @@ class MemoFormVC: UIViewController {
     @IBOutlet weak var contents: UITextView!
     @IBOutlet weak var preview: UIImageView!
     
+    lazy var dao = MemoDAO()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.contents.delegate = self
@@ -56,10 +58,14 @@ class MemoFormVC: UIViewController {
         data.contents = self.contents.text
         data.image = self.preview.image
         data.redate = Date()
-        
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.memoList.append(data)
-        
+ 
+// 흐름상 memoList와 코어데이터 양쪽에 값을 추가할 필요 없음(어짜피 코어데이터를 통해 값을 읽어오기 때문!) 그래서 기존 코드에서 필요없는 부분을 삭제한다.
+//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//        appDelegate.memoList.append(data)
+//
+        // 코어 데이터에 메모 데이터를 추가한다.
+        self.dao.insert(data)
+ 
         _ = self.navigationController?.popViewController(animated: true)
     }
     

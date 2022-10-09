@@ -25,6 +25,7 @@
 		F0A023F428EAE20F0014833D /* TutorialContentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A023F328EAE20E0014833D /* TutorialContentsVC.swift */; };
 		F0A0667828EAE30F0056C66C /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0A0667728EAE30F0056C66C /* Tutorial.storyboard */; };
 		F0A0667A28EB14340056C66C /* TutorialMasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A0667928EB14340056C66C /* TutorialMasterVC.swift */; };
+		F0A066EC28F2D05E0056C66C /* MemoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A066EB28F2D05E0056C66C /* MemoDAO.swift */; };
 		F0BFAAE3289EC8C300FB499E /* MemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFAAE2289EC8C300FB499E /* MemoListVC.swift */; };
 		F0BFAAE5289EC8E000FB499E /* MemoFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFAAE4289EC8E000FB499E /* MemoFormVC.swift */; };
 		F0BFAAE7289EC8EA00FB499E /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFAAE6289EC8EA00FB499E /* MemoReadVC.swift */; };
@@ -74,6 +75,7 @@
 		F0A023F328EAE20E0014833D /* TutorialContentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialContentsVC.swift; sourceTree = "<group>"; };
 		F0A0667728EAE30F0056C66C /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
 		F0A0667928EB14340056C66C /* TutorialMasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialMasterVC.swift; sourceTree = "<group>"; };
+		F0A066EB28F2D05E0056C66C /* MemoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDAO.swift; sourceTree = "<group>"; };
 		F0BFAAE2289EC8C300FB499E /* MemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListVC.swift; sourceTree = "<group>"; };
 		F0BFAAE4289EC8E000FB499E /* MemoFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFormVC.swift; sourceTree = "<group>"; };
 		F0BFAAE6289EC8EA00FB499E /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				F01C441F28CF016E00474C46 /* SideBarVC.swift */,
 				F01C442128CF074B00474C46 /* ProfileVC.swift */,
 				F0A023F128EAE0F00014833D /* Utils.swift */,
+				F0A066EB28F2D05E0056C66C /* MemoDAO.swift */,
 			);
 			path = MyMemory;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				F0BFAAE9289EC99600FB499E /* MeMoTableViewCell.swift in Sources */,
 				F05B0DF42868CC700029CD3C /* AppDelegate.swift in Sources */,
 				F0A0667A28EB14340056C66C /* TutorialMasterVC.swift in Sources */,
+				F0A066EC28F2D05E0056C66C /* MemoDAO.swift in Sources */,
 				F076FD2528CEFB7C008F853F /* SWRevealViewController.m in Sources */,
 				F0A023EE28EABF650014833D /* UserInfoManger.swift in Sources */,
 				F0BFAAE3289EC8C300FB499E /* MemoListVC.swift in Sources */,
