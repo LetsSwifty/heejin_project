@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "BED72CC6-7C00-4C7E-B711-8387115AB24B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B11E6246-B748-40CB-8FF2-E1617E982DA4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Chapter06-HR/DepartmentDAO.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "fmdb"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "B11E6246-B748-40CB-8FF2-E1617E982DA4 - fd1a21a2b712ebb5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Chapter06_HR.DepartmentDAO.fmdb.getter : Swift.Optional&lt;__C.FMDatabase&gt;"
+                  moduleName = "Chapter06-HR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heejin_dev/Desktop/study/Jeuncci/heejin_project/Chapter06-HR/Chapter06-HR/DepartmentDAO.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "B11E6246-B748-40CB-8FF2-E1617E982DA4 - 1e346722d082f77d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Optional&lt;__C.FMDatabase&gt; in Chapter06_HR.DepartmentDAO.fmdb.getter : Swift.Optional&lt;__C.FMDatabase&gt;"
+                  moduleName = "Chapter06-HR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heejin_dev/Desktop/study/Jeuncci/heejin_project/Chapter06-HR/Chapter06-HR/DepartmentDAO.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "B11E6246-B748-40CB-8FF2-E1617E982DA4 - 1fe129aa33519a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Chapter06_HR.DepartmentDAO.fmdb.setter : Swift.Optional&lt;__C.FMDatabase&gt;"
+                  moduleName = "Chapter06-HR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heejin_dev/Desktop/study/Jeuncci/heejin_project/Chapter06-HR/Chapter06-HR/DepartmentDAO.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "739FA857-5429-4977-84D3-FA2082AD7FE1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Chapter06-HR/DepartmentDAO.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "fmdb"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DDE220BA-576F-429F-8A64-60A07CBBF0C2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Chapter06-HR/DepartmentDAO.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fmdb"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "DDE220BA-576F-429F-8A64-60A07CBBF0C2 - 1e346722d082f645"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Optional&lt;__C.FMDatabase&gt; in Chapter06_HR.DepartmentDAO.fmdb.getter : Swift.Optional&lt;__C.FMDatabase&gt;"
+                  moduleName = "Chapter06-HR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heejin_dev/Desktop/study/Jeuncci/heejin_project/Chapter06-HR/Chapter06-HR/DepartmentDAO.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "891">
+               </Location>
+               <Location
+                  uuid = "DDE220BA-576F-429F-8A64-60A07CBBF0C2 - 1e346722d082f645"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Optional&lt;__C.FMDatabase&gt; in Chapter06_HR.DepartmentDAO.fmdb.getter : Swift.Optional&lt;__C.FMDatabase&gt;"
+                  moduleName = "Chapter06-HR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heejin_dev/Desktop/study/Jeuncci/heejin_project/Chapter06-HR/Chapter06-HR/DepartmentDAO.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "1179">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E724CE8A-546F-4F88-BB2E-B85D967EFB8A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Chapter06-HR/DepartmentDAO.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "fmdb"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
