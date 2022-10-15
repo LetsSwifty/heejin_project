@@ -30,7 +30,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSA-GL-RJ4" customClass="CSLogButton" customModule="MyMemory" customModuleProvider="target">
-                                    <rect key="frame" x="169.5" y="5" width="75" height="34.5"/>
+                                    <rect key="frame" x="169.5" y="4.5" width="75" height="35"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 </button>
@@ -261,14 +261,97 @@
                     <view key="view" contentMode="scaleToFill" id="ljc-N3-Jdm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="uNz-Xy-WFw">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" systemColor="systemPurpleColor"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="z5s-7L-fCm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="P0Q-QA-CL2"/>
+                    <navigationItem key="navigationItem" id="P0Q-QA-CL2">
+                        <barButtonItem key="rightBarButtonItem" title="새 계정" id="pUE-I7-Q06">
+                            <connections>
+                                <segue destination="dOx-p0-40a" kind="show" id="H03-9d-tpg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="indicatorView" destination="uNz-Xy-WFw" id="U5d-Yu-89f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gsg-uW-c5Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3181" y="-147"/>
+        </scene>
+        <!--신규 계정 등록-->
+        <scene sceneID="kuf-cJ-Fi8">
+            <objects>
+                <viewController id="dOx-p0-40a" customClass="JoinVC" customModule="MyMemory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oea-MV-pFy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account" translatesAutoresizingMaskIntoConstraints="NO" id="PjE-3L-CXI">
+                                <rect key="frame" x="10" y="121" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="6ba-eL-xz6"/>
+                                    <constraint firstAttribute="width" constant="90" id="Atv-UM-F9G"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Rhy-Oy-F1m">
+                                <rect key="frame" x="108" y="121" width="286" height="219"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="219" id="LqA-DA-syh"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="l40-9r-cb2">
+                                        <rect key="frame" x="0.0" y="50" width="286" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l40-9r-cb2" id="4zu-PF-zrN">
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="bP1-8r-LrD">
+                                <rect key="frame" x="197" y="480" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" systemColor="systemPinkColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="71b-Nv-Cpt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PjE-3L-CXI" firstAttribute="top" secondItem="71b-Nv-Cpt" secondAttribute="top" constant="29" id="2Xn-Y5-Zhk"/>
+                            <constraint firstItem="Rhy-Oy-F1m" firstAttribute="top" secondItem="PjE-3L-CXI" secondAttribute="top" id="aA6-SD-acv"/>
+                            <constraint firstItem="Rhy-Oy-F1m" firstAttribute="leading" secondItem="PjE-3L-CXI" secondAttribute="trailing" constant="8" symbolic="YES" id="f1x-MA-QbN"/>
+                            <constraint firstItem="PjE-3L-CXI" firstAttribute="leading" secondItem="71b-Nv-Cpt" secondAttribute="leading" constant="10" id="gk9-g5-ynT"/>
+                            <constraint firstItem="71b-Nv-Cpt" firstAttribute="trailing" secondItem="Rhy-Oy-F1m" secondAttribute="trailing" constant="20" id="j24-Sp-Tu3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="신규 계정 등록" id="623-G3-p7g">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="O2l-Uz-bQT">
+                            <connections>
+                                <action selector="submit:" destination="dOx-p0-40a" id="UMY-MU-Lwj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="indicatorView" destination="bP1-8r-LrD" id="fJn-CO-tj2"/>
+                        <outlet property="profile" destination="PjE-3L-CXI" id="QuL-by-BBz"/>
+                        <outlet property="tableView" destination="Rhy-Oy-F1m" id="UyH-cB-NTW"/>
+                        <segue destination="Z2K-Fj-8Nl" kind="unwind" identifier="backProfileVC" unwindAction="backProfileVC:" id="IPO-yg-aRE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3cz-jL-DNL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Z2K-Fj-8Nl" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3897.1014492753625" y="-144.64285714285714"/>
         </scene>
         <!--Memo ReadVC-->
         <scene sceneID="jIk-VB-tbl">
@@ -393,6 +476,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="account" width="60" height="60"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -404,6 +488,12 @@
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

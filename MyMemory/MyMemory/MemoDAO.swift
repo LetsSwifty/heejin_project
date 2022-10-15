@@ -68,6 +68,16 @@ class MemoDAO {
         //영구 저장소에 변경 사항을 반영한다.
         do {
             try self.context.save()
+            
+            // 로그인 되어있을 경우 서버에 데이터를 업로드한다
+            let tk = TokenUtils()
+            if tk.getAuthorizationHeader() != nil { // 로그아웃 상태일경우 nil 리턴
+                DispatchQueue.global(qos: .background).async {
+                    // 서버에 데이터를 업로드한다
+                    let sync = DataSync()
+                    sync.uploadDatum(object)
+                }
+            }
         } catch let e as NSError {
             print(e.localizedDescription)
         }

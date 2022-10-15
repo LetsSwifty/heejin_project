@@ -46,8 +46,8 @@
             filePath = "MyMemory/Utils.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "instanceTutorialVC(name:)"
             landmarkType = "7">
          </BreakpointContent>
